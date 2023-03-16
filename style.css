@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #397BCB;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #97B1D2;
+}
+.navbar .actions .btn {
+  border: 2px solid #397BCB;
+}
+.navbar .actions .btn.login {
+  color: #397BCB;
+  margin-right: 0.5rem;
+}
+.navbar .actions .btn.signup {
+  background-color: #397BCB;
+  color: #FFF;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+  width: 80%;
+  margin: auto;
+}
+.header .left {
+  flex: 1;
+}
+.header .left .text .heading {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.header .left .text .copy {
+  color: #97B1D2;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.header .left .btn {
+  background-color: #397BCB;
+  color: #FFF;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.25rem;
+}
+.header .right {
+  flex: 1;
+  background-image: url(./images/header-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

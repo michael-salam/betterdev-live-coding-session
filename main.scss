@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary: #397BCB;
+$primaryLight: #97B1D2;
+$neutralLight: #FFF;
+
+body {
+    font-family: "Quicksand", sans-serif;
+    color: $primary;
+}
+
+// general styles
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $primaryLight;
+
+    .actions {
+        .btn {
+            border: 2px solid $primary;
+
+            &.login {
+                color: $primary;
+                margin-right: 0.5rem;
+            }
+
+            &.signup {
+                background-color: $primary;
+                color: $neutralLight;
+            }
+        }
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+
+    .left {
+        flex: 1;
+
+        .text {
+            .heading {
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            .copy {
+                color: $primaryLight;
+                line-height: 1.7;
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .btn {
+            background-color: $primary;
+            color: $neutralLight;
+            padding: 1.5rem 2.5rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .right {
+        flex: 1;
+        background-image: url(./images/header-img.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+    }
+}
