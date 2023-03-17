@@ -23,6 +23,19 @@ body {
     display: inline-block;
     border-radius: 0.75rem;
     font-weight: 600;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+section {
+    padding: 2.5rem 0;
+    text-align: center;
+
+    .heading {
+        margin-bottom: 3rem;
+        font-size: clamp(1.25rem, 0.9643rem + 1.4286vw, 2.25rem);
+        font-weight: 400;
+    }
 }
 
 // navigation styles
@@ -30,8 +43,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
     border-bottom: 1px solid $primaryLight;
+    position: sticky;
+    top: 0;
+    background-color: $neutralLight;
+
+    .brand img {
+        width: 100%;
+    }
 
     .actions {
         .btn {
@@ -55,15 +75,16 @@ body {
     display: flex;
     gap: 4rem;
     width: 90%;
-    margin: 5rem 0 5rem auto;
+    margin: 5rem auto;
 
     .left {
         flex: 1;
+        align-self: center;
 
         .text {
             .heading {
-                font-size: 3rem;
                 font-weight: 900;
+                font-size: clamp(2rem, 1.5714rem + 2.1429vw, 3.5rem);
             }
 
             .copy {
@@ -71,6 +92,7 @@ body {
                 line-height: 1.7;
                 margin-top: 1.5rem;
                 margin-bottom: 1rem;
+                font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
             }
         }
 
@@ -84,9 +106,157 @@ body {
 
     .right {
         flex: 1;
-        background-image: url(./images/header-img.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// features style
+.features {
+    background-color: rgba($primary, 0.1);
+
+    .feature {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: start;
+        margin: 1rem auto 1rem auto;
+        width: 60%;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .img-container {
+            background-color: $primary;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            padding: 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .copy {
+            font-weight: 700;
+            font-size: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
+            text-align: left;
+        }
+    }
+}
+
+// categories style
+.categories {
+    text-align: center;
+
+    .category-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        gap: 2rem;
+        width: 80%;
+        margin: auto;
+
+        .category {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+            background-color: $primary;
+            border-radius: 1rem;
+            color: $neutralLight;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            .img-container {
+                background-color: $neutralLight;
+                min-height: 4rem;
+                min-width: 4rem;
+                padding: 0.5rem;
+                border-radius: 50%;
+                display: grid;
+                place-content: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .category-name {
+                text-align: left;
+            }
+        }
+    }
+}
+
+// CTA
+.cta {
+    background-color: $primary;
+    color: $neutralLight;
+    padding: 2.5rem 1rem;
+
+    .heading {
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        background-color: $neutralLight;
+        color: $primary;
+        font-size: 1.5rem;
+        padding: 1.25rem 2.5rem;
+    }
+}
+
+// footer styles
+.footer {
+    text-align: center;
+    color: $primaryLight;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        padding: 1rem 1rem;
+
+        .brand {
+            width: 6rem;
+        }
+
+        .actions {
+            .btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 12px;
+
+                &.login {
+                    margin-right: 2px;
+                }
+
+            }
+        }
+
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .features {
+        gap: 1rem;
+
+        .feature {
+            width: 90%;
+
+            .img-container {
+                height: 2.5rem;
+                width: 2.5rem;
+                padding: 0.5em;
+            }
+        }
     }
 }

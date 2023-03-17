@@ -1,0 +1,32 @@
+@media screen and (max-width: 640px) {
+    .navbar {
+        padding: 1rem 1rem;
+
+        .brand {
+            width: 6rem;
+        }
+
+        .actions {
+            .btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 12px;
+
+                &.login {
+                    margin-right: 2px;
+                }
+
+            }
+        }
+
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .features {
+        .feature {
+            width: 90%;
+        }
+    }
+}
