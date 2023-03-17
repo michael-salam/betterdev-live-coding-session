@@ -16,7 +16,7 @@ body {
   border: none;
   padding: 1rem 2rem;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   font-weight: 600;
 }
 
@@ -43,7 +43,7 @@ body {
   display: flex;
   gap: 4rem;
   width: 90%;
-  margin: 5rem auto;
+  margin: 5rem 0 5rem auto;
 }
 .header .left {
   flex: 1;
@@ -61,8 +61,8 @@ body {
 .header .left .btn {
   background-color: #397BCB;
   color: #FFF;
-  padding: 1.5rem 2.5rem;
-  font-size: 1.25rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
 }
 .header .right {
   flex: 1;

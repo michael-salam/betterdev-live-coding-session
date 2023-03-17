@@ -21,7 +21,7 @@ body {
     border: none;
     padding: 1rem 2rem;
     display: inline-block;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     font-weight: 600;
 }
 
@@ -55,7 +55,7 @@ body {
     display: flex;
     gap: 4rem;
     width: 90%;
-    margin: 5rem auto;
+    margin: 5rem 0 5rem auto;
 
     .left {
         flex: 1;
@@ -77,8 +77,8 @@ body {
         .btn {
             background-color: $primary;
             color: $neutralLight;
-            padding: 1.5rem 2.5rem;
-            font-size: 1.25rem;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
         }
     }
 
