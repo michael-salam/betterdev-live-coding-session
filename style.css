@@ -41,10 +41,9 @@ body {
 
 .header {
   display: flex;
-  align-items: center;
-  height: 90vh;
-  width: 80%;
-  margin: auto;
+  gap: 4rem;
+  width: 90%;
+  margin: 5rem auto;
 }
 .header .left {
   flex: 1;
@@ -67,10 +66,10 @@ body {
 }
 .header .right {
   flex: 1;
-  background-image: url(./images/header-img.png);
+  background-image: url(./images/header-img.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
